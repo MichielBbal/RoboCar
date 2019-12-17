@@ -5,11 +5,10 @@ My Project to create a mini car and using AI to control it.
 
 # Basic setup: Arduino powered Robot Car
 ##Hardware:
-* Joy-mii chassis, wheels and electrical motors.
-* Arduino Uno 
-* Motor shield for Arduino
+* Joy-IT chassis, wheels and electrical motors.
+* Arduino Uno and Motor shield for Arduino
 * Bluetooth receiver HC-05
-* Batteries for motors and batteries for Arduino + wires to connect them
+* Batteries for motors and batteries for Arduino + wires/plugs to connect the batteries
 * Jumper wires
 
 * an Android device (tablet/phone) for controlling the car using bluetooth
