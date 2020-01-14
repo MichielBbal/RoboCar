@@ -1,26 +1,35 @@
 # RoboCar
-My Project to create a mini car and using AI to control it.
+My Project to create a mini car (and using ML to control it).
 
-<b> This is an ongoing project! </b>
+<b> This is an ongoing project! </b>(
 
-# Basic setup: Arduino powered Robot Car
+# Basic setup: Raspberry Pi powered Robot Car
 ##Hardware:
 * Joy-IT chassis, wheels and electrical motors.
-* Arduino Uno and Motor shield for Arduino
-* Bluetooth receiver HC-05
-* Batteries for motors and batteries for Arduino + wires/plugs to connect the batteries
+* Raspberry Pi and L298N motor bridge
+* a PiCamera with ribbon. Preferably a PiCamera holder.
+* Batteries for motors and batteries for RPi + wires/plugs to connect the batteries
 * Jumper wires
 
-* an Android device (tablet/phone) for controlling the car using bluetooth
+* a laptop or tablet with VNC installed to control the car (see below for VNC)
 
-##Software
-* use the .ino file for controlling the Arduino
-* Android app can be found here: https://sites.google.com/site/bluetoothrccar/home/3BluetoothModulesAndArduinoCode 
-* Or create your own app with MIT AppInventor
+## Software
+We use python
+* use gpiozero library to control the engines
+* use PiCamera
+* See code for scripts
+
+### VNC
+Use this [https://www.raspberrypi.org/documentation/remote-access/vnc/] tutorial to install VNC on both your device and the Pi. Make sure you have an account and are logged in on both devices. 
 
 ## Wiring / set up:
 to do
 
-# Advanced: putting a camera on top of the car and using OpenCV to give it AI capabilities
+# Advanced:
+
+## Line following
+
+to do
+## OpenCV on RPi with Haar Transformations to detect a STOP-sign
 
 to do
