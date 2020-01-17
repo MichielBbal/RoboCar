@@ -38,8 +38,8 @@ Third connect the battery for the engine and the battery for the Raspberry.
 # Advanced:
 
 ## Line following
+We use TCRT5000 sensor for line following. 
 
-to do
 ## OpenCV on RPi with Haar Transformations to detect a STOP-sign
-
-to do
+See my tutorial for OpenCV.
+More to follow.
