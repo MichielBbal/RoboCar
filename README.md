@@ -1,11 +1,9 @@
 # RoboCar
-My Project to create a robot car with a camera.
-
-<b> This is work in progress. </b>(
+My Project to create a robot car with a camera. <b> This is work in progress.</b>
 
 # Basic setup: Raspberry Pi robot car with camera
 ## Hardware:
-* Joy-IT chassis, wheels and electrical motors. You can find an example [https://www.conrad.nl/p/joy-it-arduino-robot-car-kit-01-robot03-robot-chassis-1573542] (Dutch website)
+* Joy-IT chassis, wheels and electrical motors. You can find an example [https://www.conrad.nl/p/joy-it-arduino-robot-car-kit-01-robot03-robot-chassis-1573542 here] (Dutch website)
 * Raspberry Pi and L298N motor bridge.
 * a PiCamera with ribbon. Preferably a PiCamera holder.
 * a powerbank or 5V battery to control the raspberry
