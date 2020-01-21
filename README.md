@@ -29,10 +29,13 @@ Use this [https://www.raspberrypi.org/documentation/remote-access/vnc/] tutorial
 For this project we use VNC because it has a low latency. I've also tried VLC, but with VLC latency was about 2-3s which is too much for our purpose.
 
 ## Wiring / set up:
-First connect the engines to the LN298 motor shield. See image [to do] for wiring diagram. 
-Next, connect the camera to the Raspberry.
-Third connect the battery for the engine and the battery for the Raspberry.
 
+[RoboCar wiring.png] 
+
+Steps:
+* First connect the engines to the LN298 motor shield. 
+* Next, connect the camera to the Raspberry.
+* Third connect the battery for the engine and the battery for the Raspberry.
 
 
 # Advanced:
