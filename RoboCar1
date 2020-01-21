@@ -1,0 +1,62 @@
+"""RoboCar script. Control a RPi powered robot car with camera
+"""
+# source: github.com/MichielBbal/RoboCar
+# Author: Michiel Bontenbal
+# RoboCar version 1. date: 21/01/2020
+
+from pynput.keyboard import Key, KeyCode, Listener
+from gpiozero import Robot
+from time import sleep
+from picamera import PiCamera
+
+camera = PiCamera()
+camera.resolution =(160,120)
+camera.framerate = 20
+camera.preview_fullscreen=False
+camera.preview_window=(550,200,960,720)
+camera.start_preview()
+sleep(1)
+
+def on_press(key):
+    robot = Robot(left=(17,22), right=(23,24))
+ 
+    if key == KeyCode(char ='f'):
+        robot.forward()
+        print("forward")
+        sleep(0.02)
+    elif key == KeyCode(char ='b'):
+        robot.backward()
+        print('backward')
+        sleep(0.02)
+    elif key == KeyCode(char ='l'):
+        robot.left()
+        print('left')
+        sleep(0.02)
+    elif key == KeyCode(char ='r'):
+        robot.right()
+        print('right')
+        sleep(0.02)
+    else:
+        print("ERROR: wrong command")
+                      
+def on_release(key):
+    robot = Robot(left=(17,22), right=(23,24))
+    if key in [KeyCode(char='f'), KeyCode(char='b')]:
+        print("stop")
+        robot.stop()
+    elif key ==KeyCode(char ='q'):
+        return False
+    else:
+        pass
+               
+while True:
+    try:
+        with Listener(on_press = on_press, on_release = on_release) as listener:
+           listener.join()
+        #with Listener (on_press=on_press, on_release = on_release) as listener:
+            #listener.start()   
+    
+    except:
+        pass
+
+camera.stop_preview()
