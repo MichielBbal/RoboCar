@@ -29,7 +29,6 @@ Use this [https://www.raspberrypi.org/documentation/remote-access/vnc/] tutorial
 For this project we use VNC because it has a low latency. I've also tried VLC, but with VLC latency was about 2-3s which is too much for our purpose.
 
 ## Wiring / set up:
-![RoboCar wiring](RoboCar wiring.png)
 
 Steps:
 * First connect the engines to the LN298 motor shield. 
